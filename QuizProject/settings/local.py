@@ -10,7 +10,7 @@ DATABASES = {
         'NAME': 'quizdb',
         'USER': 'postgres',
         'PASSWORD': '102938',
-        'HOST': 'db',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }

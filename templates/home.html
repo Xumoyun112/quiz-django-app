@@ -6,7 +6,7 @@
 
         <h1>Test page</h1>
         {% for quiz in quizs %}
-            <a href="{% url 'quistion' quiz.id %}">{{ quiz.name }}</a>
+            <a href="{% url 'question' quiz.id %}">{{ quiz.name }}</a>
             <hr>
         {% endfor %}
 {% endblock %}

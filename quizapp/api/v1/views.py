@@ -14,7 +14,7 @@ from rest_framework import filters
 
 @api_view(['GET'])
 def hello_world(request):
-    data = {'message': 'Hello World!'}
+    data = {'message': 'hello world!'}
     return Response(data=data, status=status.HTTP_200_OK)
 
 

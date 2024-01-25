@@ -15,7 +15,7 @@ from .utils import check_answer
 User = get_user_model()
 
 
-def qiuz(request):
+def quiz(request):
     quizs = QuizType.objects.all()
     context = {
         'quizs': quizs
@@ -51,23 +51,3 @@ def result_list(request):
     }
     return render(request, 'quizapp/result_list.html', context)
 
-#
-# def sign_up(request):
-#     if request.method == "POST":
-#         form = SignUpForm(request.POST)
-#         if form.is_valid():
-#             user = form.save()
-#             subject = 'Test Project'
-#             message = (f'Ruyxatdan utdingiz {user.username} for signing up!'
-#                        f'Endi har kuni shu saytga kirib utirasiz {user.username}')
-#             messages.success(request, 'Siz ruyxatdan utdingiz!!!')
-#             return redirect('login:account')
-#         messages.warning(request, 'qayta urinib kuring')
-#
-#     form = SignUpForm()
-#
-#     context = {
-#         'form': form
-#     }
-#
-#     return render(request, 'registration/register.html', context)

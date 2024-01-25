@@ -1,10 +1,10 @@
 from django.urls import path
 
-from  .views import question, qiuz, result_list
+from  .views import question, quiz, result_list
 
 urlpatterns = [
-    path('', qiuz, name='qiuz'),
-    path('quiz/<int:pk>/', question, name='quistion'),
+    path('', quiz, name='quiz'),
+    path('quiz/<int:pk>/', question, name='question'),
     path('results/', result_list, name='results')
 
 ]
